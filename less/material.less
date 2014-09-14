@@ -1,0 +1,98 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300|Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic);
+@import "variables.lessimport";
+@import "mixins.lessimport";
+@import "prefixer.lessimport";
+@import "animations.lessimport";
+@import "shadows.lessimport";
+@import "alerts.lessimport";
+@import "buttons.lessimport";
+//@import "checkboxes.lessimport"; // XXX Causing error in less compiler
+@import "icons.lessimport";
+@import "inputs.lessimport";
+@import "lists.lessimport";
+@import "navbar.lessimport";
+@import "plugin-nouislider.lessimport";
+@import "plugin-snackbarjs.lessimport";
+@import "popups.lessimport";
+@import "progress.lessimport";
+@import "radios.lessimport";
+@import "ripples.lessimport";
+@import "tabs.lessimport";
+
+body {
+    background-color: #EEEEEE;
+    &.inverse {
+        background: #333333;
+        &, .form-control {
+            color: @darkbg-text;
+        }
+    }
+}
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+legend {
+    border-bottom: 0;
+}
+
+body, .container, .container-fluid {
+    .well, .jumbotron {
+        background-color: #fff;
+        .shadow-z-2();
+        border-radius: 2px;
+        border: 0;
+        p {
+            font-weight: 300;
+        }
+        .variations(~"", background-color, #FFF);
+        .variations(~"", color, @lightbg-text);
+    }
+}
+
+.modal-content {
+    .shadow-z-2();
+    border-radius: 0;
+    border: 0;
+    .modal-header {
+        border-bottom: 0;
+    }
+    .modal-footer {
+        border-top: 0;
+        .btn+.btn {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.dropdown-menu {
+    border: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    .divider {
+        background-color: rgba(229, 229, 229, 0.12);
+    }
+    li {
+        overflow: hidden;
+        position: relative;
+        a:hover {
+            background-color: transparent;
+        }
+    }
+}
+
+.text-warning {
+    color: @btn-warning;
+}
+.text-primary {
+    color: @btn-primary;
+}
+.text-danger {
+    color: @btn-danger;
+}
+.text-success {
+    color: @btn-success;
+}
+.text-info {
+    color: @btn-info;
+}
