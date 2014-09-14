@@ -27,10 +27,10 @@ Package.onUse(function(api) {
     api.addFiles('less/popups.lessimport', 'client');
     api.addFiles('less/progress.lessimport', 'client');
     api.addFiles('less/radios.lessimport', 'client');
-    api.addFiles('less/ripples.lessimport', 'client');
+    api.addFiles('less/waves.lessimport', 'client');
     api.addFiles('less/tabs.lessimport', 'client');
     api.addFiles('less/material.less', 'client');
 
-    api.addFiles('js/ripples.js', 'client');
+    api.addFiles('js/waves.js', 'client');
     api.addFiles('js/material.js', 'client');
 });
