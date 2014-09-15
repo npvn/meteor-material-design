@@ -1,5 +1,5 @@
 Meteor.startup(function() {
-    // Initialize ripple effect when a template is rendered
+    // Initialize material design effects when a template is rendered
     for (var name in Template) {
         // XXX Ugly hack to loop through user-defined templates
         if ( Template.hasOwnProperty(name)
@@ -11,7 +11,8 @@ Meteor.startup(function() {
              var oldCallback = Template[name].rendered || null;
 
              var newCallback = function() {
-                 // Trigger waves ripple effect
+                 // Init material design effects
+                 displayMaterialDesignEffects();
                  Waves.displayEffect({duration: 500});
              };
 
