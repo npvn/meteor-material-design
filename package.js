@@ -33,4 +33,5 @@ Package.onUse(function(api) {
 
     api.addFiles('js/waves.js', 'client');
     api.addFiles('js/material.js', 'client');
+    api.addFiles('js/init.js', 'client');
 });

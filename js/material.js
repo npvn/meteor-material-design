@@ -1,8 +1,4 @@
-/* globals ripples */
-
 $(function (){
-
-    ripples.init(".btn:not(.btn-link), .navbar a, .nav-tabs a, .withripple");
 
     // Add fake-checkbox to material checkboxes
     $(".checkbox > label > input").after("<span class=ripple></span><span class=check></span>");
