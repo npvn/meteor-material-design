@@ -12,7 +12,7 @@ Meteor.startup(function() {
 
              var newCallback = function() {
                  // Trigger waves ripple effect
-                 Waves.displayEffect({duration: 400});
+                 Waves.displayEffect({duration: 500});
              };
 
              // Override the existing rendered callback
