@@ -10,10 +10,9 @@ Meteor.startup(function() {
 
              var oldCallback = Template[name].rendered || null;
 
-             var newCallback = function() {
+             var newCallback = function(templateElements) {
                  // Init material design effects
-                 displayMaterialDesignEffects();
-                 Waves.displayEffect({duration: 500});
+                 displayMaterialDesignEffects(templateElements);
              };
 
              // Override the existing rendered callback
@@ -21,7 +20,7 @@ Meteor.startup(function() {
 
                  Template[name].rendered = function() {
                      oldCallback && oldCallback.call( Template[name] );
-                     newCallback();
+                     newCallback( this.$('*') );
                  };
 
              })(name, oldCallback, newCallback);
