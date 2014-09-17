@@ -17,36 +17,19 @@
 @brown: #795548;
 @lightgrey: #ECECEC;
 
-// Bootstrap shades
-@primary: #4285F4;
-@success: #0F9D58;
-@info: @lightblue;
-@warning: @deeporange;
-@danger: @red;
+// Contextual colors
+@primary: #3f51b5;
+@success: #8bc34a;
+@info: #03a9f4;
+@warning: #ff5722;
+@danger: #e51c23;
+@color-disabled: #a8a8a8;
+@background-disabled: #eaeaea;
 
 // Typography elements for Material
 @darkbg-text: rgba(255,255,255,0.84);
 @lightbg-text: rgba(0,0,0,0.84);
 @icon-color: rgba(0,0,0,0.5);
-
-// Bootstrap variables
-@btn-default: transparent;
-@btn-default-text: @lightbg-text;
-
-@btn-primary: @primary;
-@btn-primary-text: @darkbg-text;
-
-@btn-success: @success;
-@btn-success-text: @darkbg-text;
-
-@btn-info: @info;
-@btn-info-text: @darkbg-text;
-
-@btn-warning: @warning;
-@btn-warning-text: @darkbg-text;
-
-@btn-danger: @danger;
-@btn-danger-text: @darkbg-text;
 
 @input-unchecked: rgba(137, 137, 137, 0.3);
 @input-checked: rgba(15, 157, 88, 0.3);
