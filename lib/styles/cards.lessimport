@@ -1,0 +1,55 @@
+.card {
+
+    /***** Make height equal to width (http://stackoverflow.com/a/6615994) ****/
+
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    > div:first-child {
+        margin-top: 100%;
+    }
+    .card-inner {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    /**************************************************************************/
+
+    .waves-effect();
+
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: @box-shadow-2;
+
+    .card-image {
+        height: 60%;
+        position: relative;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+        .card-image-headline {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            color: #fff;
+            font-size: 2em;
+        }
+    }
+
+    .card-body {
+        height: 30%;
+        padding: 1em;
+    }
+
+    .card-footer {
+        height: 10%;
+        padding: 1em;
+    }
+}
