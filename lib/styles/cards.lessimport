@@ -5,10 +5,10 @@
     display: inline-block;
     position: relative;
     width: 100%;
-    > div:first-child {
+    .card-height-indicator {
         margin-top: 100%;
     }
-    .card-inner {
+    .card-content {
         position: absolute;
         top: 0;
         bottom: 0;
