@@ -83,7 +83,7 @@ select[multiple].form-control {
         height: 18px;
         width: 100px;
         margin-top: -1px;
-        top: 25%;
+        top: 7px;
         left: 0;
         pointer-events: none;
         opacity: 0.9;
@@ -205,3 +205,16 @@ select.form-control {
 @-ms-keyframes input-highlight {.keyframe-input-highlight()}
 @-o-keyframes input-highlight {.keyframe-input-highlight()}
 @keyframes input-highlight {.keyframe-input-highlight()}
+
+// Input files (kinda hack)
+.form-control-wrapper input[type=file] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
