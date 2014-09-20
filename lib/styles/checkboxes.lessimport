@@ -9,7 +9,7 @@
         cursor: pointer;
         padding-left: 45px;
         position: relative;
-        span {
+        .check {
             display: block;
             position: absolute;
             left: 0px;
@@ -69,8 +69,10 @@
     }
 
     // Style for disabled inputs
-    input[type=checkbox][disabled]:not(:checked) ~ .check:before {
-        opacity: 0.5;
+    input[type=checkbox][disabled]:not(:checked) {
+        & ~ .check:before, & ~ .text {
+            opacity: 0.3;
+        }        
     }
     input[type=checkbox][disabled] ~ .check:after {
         background-color: @lightbg-text;

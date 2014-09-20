@@ -6,7 +6,9 @@ Package.describe({
 Package.onUse(function(api) {
     api.use('jquery', 'client');
     api.use('less', 'client');
+    api.use('templating', 'client');
 
+    // Styles
     api.addFiles('lib/styles/bootstrap.min.css', 'client');
     api.addFiles('lib/styles/variables.lessimport', 'client');
     api.addFiles('lib/styles/mixins.lessimport', 'client');
@@ -31,8 +33,12 @@ Package.onUse(function(api) {
     api.addFiles('lib/styles/material.lessimport', 'client');
     api.addFiles('main.less', 'client');
 
+    // JS
     api.addFiles('lib/js/bootstrap.min.js', 'client');
     api.addFiles('lib/js/waves.js', 'client');
     api.addFiles('lib/js/material.js', 'client');
     api.addFiles('main.js', 'client');
+    
+    // Templates
+    api.addFiles('templates/checkbox.html', 'client');
 });
