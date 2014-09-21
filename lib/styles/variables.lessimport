@@ -34,7 +34,7 @@
 @input-unchecked: rgba(137, 137, 137, 0.3);
 @input-checked: rgba(15, 157, 88, 0.3);
 
-@radio-default: @lightbg-text;
+@radio-default: #0f9d58;
 @radio-primary: @primary;
 @radio-success: @success;
 @radio-info:    @info;

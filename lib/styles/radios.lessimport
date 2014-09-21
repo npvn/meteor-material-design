@@ -33,7 +33,7 @@
             }
         }
         .circle {
-            border: 2px solid @lightbg-text;
+            border: 2px solid @radio-default;
             height: 15px;
             width: 15px;
             border-radius: 100%;
