@@ -1,0 +1,11 @@
+<template name="TextArea">
+    <div class="form-control-wrapper">
+        {{#if floatingLabel}}
+            <textarea name="{{name}}" class="form-control {{isEmpty}}" rows={{rows}} value="{{value}}" disabled="{{disabled}}"></textarea>
+            <div class="floating-label">{{placeholder}}</div>
+        {{else}}
+            <textarea name="{{name}}" class="form-control {{isEmpty}}" rows={{rows}} value="{{value}}" disabled="{{disabled}}" placeholder="{{placeholder}}"></textarea>
+        {{/if}}
+        <span class="material-input"></span>
+    </div>   
+</template>

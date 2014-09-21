@@ -43,5 +43,7 @@ Package.onUse(function(api) {
     api.addFiles('templates/checkbox.html', 'client');
     api.addFiles('templates/radio.html', 'client');
     api.addFiles('templates/input.html', 'client');
-    api.addFiles('templates/input.js', 'client');
+    api.addFiles('templates/input.js', 'client');    
+    api.addFiles('templates/textarea.html', 'client');
+    api.addFiles('templates/textarea.js', 'client');
 });  
