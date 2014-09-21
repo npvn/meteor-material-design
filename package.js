@@ -46,4 +46,5 @@ Package.onUse(function(api) {
     api.addFiles('templates/input.js', 'client');    
     api.addFiles('templates/textarea.html', 'client');
     api.addFiles('templates/textarea.js', 'client');
+    api.addFiles('templates/select.html', 'client');
 });  
