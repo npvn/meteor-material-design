@@ -70,7 +70,7 @@
 
     // Style for disabled inputs
     input[type=checkbox][disabled]:not(:checked) {
-        & ~ .check:before, & ~ .text {
+        & ~ .check:before, & ~ .checkbox-label {
             opacity: 0.3;
         }        
     }
