@@ -8,7 +8,7 @@
         cursor: pointer;
         padding-left: 45px;
         position: relative;
-        span {
+        span:not(.radio-label) {
             display: block;
             position: absolute;
             left: 10px;
@@ -48,10 +48,11 @@
     }
     .variations(~" input[type=radio]:checked ~ .check", background-color, @radio-default);
     .variations(~" input[type=radio]:checked ~ .circle", border-color, @radio-default);
-
-    input[type=radio][disabled] ~ .check,
-    input[type=radio][disabled] ~ .circle {
-        opacity: 0.5;
+    
+    input[type=radio][disabled] {
+        & ~ .check, & ~ .circle, & ~ .radio-label {
+            opacity: 0.3;
+        }
     }
 
     input[type=radio] { display: none; }
