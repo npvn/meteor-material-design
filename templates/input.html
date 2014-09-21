@@ -1,0 +1,11 @@
+<template name="Input">
+    <div class="form-control-wrapper">
+        {{#if floatingLabel}}
+            <input type="{{type}}" name="{{name}}" class="form-control {{isEmpty}}" value="{{value}}" disabled="{{disabled}}">
+            <div class="floating-label">{{placeholder}}</div>
+        {{else}}
+            <input type="{{type}}" name="{{name}}" class="form-control {{isEmpty}}" value="{{value}}" disabled="{{disabled}}" placeholder="{{placeholder}}">
+        {{/if}}
+        <span class="material-input"></span>
+    </div>   
+</template>

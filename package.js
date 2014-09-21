@@ -42,4 +42,6 @@ Package.onUse(function(api) {
     // Templates
     api.addFiles('templates/checkbox.html', 'client');
     api.addFiles('templates/radio.html', 'client');
+    api.addFiles('templates/input.html', 'client');
+    api.addFiles('templates/input.js', 'client');
 });  
