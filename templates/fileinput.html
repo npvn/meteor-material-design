@@ -1,0 +1,8 @@
+<template name="FileInput">
+    <div class="form-control-wrapper fileinput">
+        <input type="text" readonly="" class="form-control empty">
+        <input name="{{name}}" type="file" multiple="{{multiple}}" accept="{{accept}}" disabled="{{disabled}}">
+        <div class="floating-label">{{#if placeholder}} {{placeholder}} {{else}} Browse... {{/if}}</div>
+        <span class="material-input"></span>
+    </div>
+</template>
