@@ -36,7 +36,6 @@ Package.onUse(function(api) {
     // JS
     api.addFiles('lib/js/bootstrap.min.js', 'client');
     api.addFiles('lib/js/waves.js', 'client');
-    api.addFiles('lib/js/material.js', 'client');
     api.addFiles('main.js', 'client');
     
     // Templates
@@ -49,4 +48,4 @@ Package.onUse(function(api) {
     api.addFiles('templates/select.html', 'client');
     api.addFiles('templates/fileinput.html', 'client');
     api.addFiles('templates/fileinput.js', 'client');
-});  
+});
