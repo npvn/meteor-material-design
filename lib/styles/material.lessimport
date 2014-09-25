@@ -16,23 +16,6 @@ legend {
     border-bottom: 0;
 }
 
-body, .container, .container-fluid {
-    .well, .jumbotron {
-        color: @lightbg-text;
-        background-color: #fff;
-        .shadow-z-2();
-        border-radius: 2px;
-        border: 0;
-        p {
-            font-weight: 300;
-        }
-        .variations(~"", background-color, #FFF);
-    }
-    [class^="well well-material"] {
-        color: @darkbg-text;
-    }
-}
-
 .modal-content {
     .shadow-z-2();
     border-radius: 0;

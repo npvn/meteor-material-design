@@ -28,6 +28,7 @@ Package.onUse(function(api) {
     api.addFiles('lib/styles/progress.lessimport', 'client');
     api.addFiles('lib/styles/radios.lessimport', 'client');
     api.addFiles('lib/styles/tabs.lessimport', 'client');
+    api.addFiles('lib/styles/welljumbo.lessimport', 'client');
     api.addFiles('lib/styles/cards.lessimport', 'client');
     api.addFiles('lib/styles/waves.lessimport', 'client');
     api.addFiles('lib/styles/material.lessimport', 'client');

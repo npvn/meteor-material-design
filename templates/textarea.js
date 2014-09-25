@@ -6,11 +6,13 @@ Template.TextArea.helpers({
 
 Template.TextArea.events({
     'keyup textarea.form-control': function(e) {
-        var $el = $(e.target);
-        if ( $el.val() !== "" ) $el.removeClass("empty");
-        else $el.addClass("empty");
-    }
-    , 'keydown textarea.form-control': function(e) {
-        $(e.target).removeClass("empty");
+        var self = $(e.target);
+        setTimeout(function() {
+            if (self.val() === "") {
+                self.addClass("empty");
+            } else {
+                self.removeClass("empty");
+            }
+        }, 1);
     }
 });
