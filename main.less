@@ -3,7 +3,6 @@
 @import "lib/styles/mixins.lessimport";
 @import "lib/styles/prefixer.lessimport";
 @import "lib/styles/animations.lessimport";
-@import "lib/styles/shadows.lessimport";
 @import "lib/styles/alerts.lessimport";
 @import "lib/styles/buttons.lessimport";
 @import "lib/styles/checkboxes.lessimport";
@@ -16,8 +15,27 @@
 @import "lib/styles/popups.lessimport";
 @import "lib/styles/progress.lessimport";
 @import "lib/styles/radios.lessimport";
+@import "lib/styles/dialogs.lessimport";
+@import "lib/styles/dropdown.lessimport";
 @import "lib/styles/tabs.lessimport";
 @import "lib/styles/welljumbo.lessimport";
 @import "lib/styles/cards.lessimport";
-@import "lib/styles/material.lessimport";
 @import "lib/styles/waves.lessimport";
+
+body {
+    background-color: @body-background-light;
+    &.inverse {
+        background-color: @body-background-dark;
+        &, .form-control {
+            color: @darkbg-text;
+        }
+    }
+}
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+legend {
+    border-bottom: 0;
+}

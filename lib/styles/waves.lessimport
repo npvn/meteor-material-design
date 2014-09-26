@@ -46,7 +46,7 @@
         width:100px;
         height:100px;
         opacity:0;
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: @ripple-dark-1;
         .transition(all 0.5s linear);
         .transform(scale(0));
     }

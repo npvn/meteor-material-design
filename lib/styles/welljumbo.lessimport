@@ -1,4 +1,3 @@
-// main: material.less
 body, .container, .container-fluid {
 
     .well, .well:not([class^="well well-material-"]) {
@@ -54,7 +53,7 @@ body, .container, .container-fluid {
         background-color: #fff;
         padding: 19px;
         margin-bottom: 20px;
-        .shadow-z-2();
+        box-shadow: @box-shadow-2;
         border-radius: 2px;
         border: 0;
         p {

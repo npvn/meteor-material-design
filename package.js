@@ -14,7 +14,6 @@ Package.onUse(function(api) {
     api.addFiles('lib/styles/mixins.lessimport', 'client');
     api.addFiles('lib/styles/prefixer.lessimport', 'client');
     api.addFiles('lib/styles/animations.lessimport', 'client');
-    api.addFiles('lib/styles/shadows.lessimport', 'client');
     api.addFiles('lib/styles/alerts.lessimport', 'client');
     api.addFiles('lib/styles/buttons.lessimport', 'client');
     api.addFiles('lib/styles/checkboxes.lessimport', 'client');
@@ -27,11 +26,12 @@ Package.onUse(function(api) {
     api.addFiles('lib/styles/popups.lessimport', 'client');
     api.addFiles('lib/styles/progress.lessimport', 'client');
     api.addFiles('lib/styles/radios.lessimport', 'client');
+    api.addFiles('lib/styles/dialogs.lessimport', 'client');
+    api.addFiles('lib/styles/dropdown.lessimport', 'client');
     api.addFiles('lib/styles/tabs.lessimport', 'client');
     api.addFiles('lib/styles/welljumbo.lessimport', 'client');
     api.addFiles('lib/styles/cards.lessimport', 'client');
     api.addFiles('lib/styles/waves.lessimport', 'client');
-    api.addFiles('lib/styles/material.lessimport', 'client');
     api.addFiles('main.less', 'client');
 
     // JS

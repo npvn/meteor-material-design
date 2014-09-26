@@ -1,0 +1,14 @@
+.modal-content {
+    box-shadow: @box-shadow-2;
+    border-radius: 0;
+    border: 0;
+    .modal-header {
+        border-bottom: 0;
+    }
+    .modal-footer {
+        border-top: 0;
+        .btn+.btn {
+            margin-bottom: 10px;
+        }
+    }
+}

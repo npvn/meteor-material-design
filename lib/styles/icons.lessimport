@@ -1,5 +1,3 @@
-// main: material.less
-
 .icon {
     .variations(~"", color, @lightbg-text);
 }

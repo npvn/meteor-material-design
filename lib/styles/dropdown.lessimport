@@ -1,0 +1,14 @@
+.dropdown-menu {
+    border: 0;
+    box-shadow: @box-shadow-2;
+    .divider {
+        background-color: @dropdown-menu-divider;
+    }
+    li {
+        overflow: hidden;
+        position: relative;
+        a:hover {
+            background-color: transparent;
+        }
+    }
+}

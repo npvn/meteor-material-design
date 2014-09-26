@@ -1,5 +1,3 @@
-// main: material.less
-
 fieldset[disabled] .form-control, .form-control-wrapper .form-control, .form-control {
     &, &:focus, &.focus {
         &:not(textarea):not(select) {
@@ -11,7 +9,7 @@ fieldset[disabled] .form-control, .form-control-wrapper .form-control, .form-con
         box-shadow: none;
         border-radius: 0;
         background: transparent;
-        border-bottom: 1px solid #757575;
+        border-bottom: 1px solid @input-border;
         &:disabled {
             border-style: dashed;
         }
@@ -34,7 +32,7 @@ select[multiple].form-control {
     }
 
     .floating-label {
-        color: #7E7E7E;
+        color: @input-floating-label;
         font-size: 14px;
         position: absolute;
         pointer-events: none;
@@ -173,11 +171,11 @@ select[multiple].form-control {
 select.form-control {
     border: 0;
     box-shadow: none;
-    border-bottom: 1px solid #757575;
+    border-bottom: 1px solid @input-border;
     border-radius: 0;
     &:focus, &.focus {
         box-shadow: none;
-        border-color: #757575;
+        border-color: @input-border;
     }
 }
 

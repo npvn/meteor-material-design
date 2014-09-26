@@ -16,11 +16,11 @@
     }
 
     &:not(.btn-flat) {
-        background-color: #dfdfdf;
+        background-color: @default;
     }
 
     &:disabled:not(.btn-flat) {
-        color: @color-disabled !important;
+        color: @text-disabled !important;
         background-color: @background-disabled !important;
         box-shadow: none;
     }
@@ -30,7 +30,7 @@
         box-shadow: none;
         font-weight: 500;
         &:disabled {
-            color: @color-disabled !important;
+            color: @text-disabled !important;
         }
         &.btn-primary {
             color: @primary;
@@ -48,7 +48,7 @@
             color: @danger;
         }
         .waves-ripple {
-            background-color: rgba(0, 0, 0, 0.07);
+            background-color: @ripple-dark-flat-button;
         }
     }
 
@@ -81,27 +81,27 @@
             }
         }
         &.btn-primary {
-            color: #fff;
+            color: @darkbg-text;
             background-color: @primary;
         }
         &.btn-success {
-            color: #fff;
+            color: @darkbg-text;
             background-color: @success;
         }
         &.btn-info {
-            color: #fff;
+            color: @darkbg-text;
             background-color: @info;
         }
         &.btn-warning {
-            color: #fff;
+            color: @darkbg-text;
             background-color: @warning;
         }
         &.btn-danger {
-            color: #fff;
+            color: @darkbg-text;
             background-color: @danger;
         }
         .waves-ripple {
-            background-color: rgba(0, 0, 0, 0.2);
+            background-color: @ripple-dark-2;
         }
     }
 }

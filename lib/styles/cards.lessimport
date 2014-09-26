@@ -21,7 +21,8 @@
     .waves-effect();
 
     border-radius: 3px;
-    background: #fff;
+    color: @card-body-text;
+    background: @card-body-background;
     box-shadow: @box-shadow-2;
 
     .card-image {
@@ -38,7 +39,7 @@
             position: absolute;
             bottom: 16px;
             left: 16px;
-            color: #fff;
+            color: @card-image-headline;
             font-size: 2em;
         }
     }
