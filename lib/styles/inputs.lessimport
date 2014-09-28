@@ -111,7 +111,7 @@ select[multiple].form-control {
 }
 
 .form-group {
-    &.has-warning {
+    &.input-warning {
         .material-input:before, input.form-control:focus ~ .material-input:after, input.form-control.focus ~ .material-input:after {
             background: @input-warning;
         }
@@ -119,7 +119,7 @@ select[multiple].form-control {
             color: @input-warning;
         }
     }
-    &.has-error {
+    &.input-danger {
         .material-input:before, input.form-control:focus ~ .material-input:after, input.form-control.focus ~ .material-input:after {
             background: @input-danger;
         }
@@ -127,7 +127,7 @@ select[multiple].form-control {
             color: @input-danger;
         }
     }
-    &.has-success {
+    &.input-success {
         .material-input:before, input.form-control:focus ~ .material-input:after, input.form-control.focus ~ .material-input:after {
             background: @input-success;
         }
@@ -135,7 +135,7 @@ select[multiple].form-control {
             color: @input-success;
         }
     }
-    &.has-info {
+    &.input-info {
         .material-input:before, input.form-control:focus ~ .material-input:after, input.form-control.focus ~ .material-input:after {
             background: @input-info;
         }
