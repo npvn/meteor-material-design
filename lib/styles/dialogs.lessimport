@@ -1,5 +1,5 @@
 .modal-content {
-    margin-top: 15em; //XXX Need a better way to position the dialog
+    margin-top: 10em; //XXX Need a better way to position the dialog
     box-shadow: @box-shadow-5;
     border-radius: 2px;
     border: none;
