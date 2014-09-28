@@ -47,9 +47,6 @@
         &.btn-danger {
             color: @danger;
         }
-        .waves-ripple {
-            background-color: @ripple-dark-flat-button;
-        }
     }
 
     &.btn-raised {
