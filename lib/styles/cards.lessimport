@@ -35,10 +35,13 @@
             border-top-left-radius: 3px;
             border-top-right-radius: 3px;
         }
+        .waves-ripple {
+            background-color: @ripple-light;
+        }
         .card-image-headline {
             position: absolute;
             bottom: 16px;
-            left: 16px;
+            left: 18px;
             color: @card-image-headline;
             font-size: 2em;
         }
@@ -46,11 +49,20 @@
 
     .card-body {
         height: 30%;
-        padding: 1em;
+        padding: 18px;
     }
 
     .card-footer {
         height: 10%;
-        padding: 1em;
+        padding: 18px;
+        button {
+            margin: 0 !important;
+            position: relative;
+            bottom: 25px;
+            width: auto;           
+            &:first-child {
+                left: -15px;
+            }
+        }
     }
 }
