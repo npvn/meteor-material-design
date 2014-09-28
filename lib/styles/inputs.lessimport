@@ -112,7 +112,7 @@ select[multiple].form-control {
 
 .form-group {
     &.input-warning {
-        .material-input:before, input.form-control:focus ~ .material-input:after, input.form-control.focus ~ .material-input:after {
+        .material-input:before, .form-control:focus ~ .material-input:after, .form-control.focus ~ .material-input:after {
             background: @input-warning;
         }
         .control-label, input.form-control:not(.empty) ~ .floating-label {
@@ -120,7 +120,7 @@ select[multiple].form-control {
         }
     }
     &.input-danger {
-        .material-input:before, input.form-control:focus ~ .material-input:after, input.form-control.focus ~ .material-input:after {
+        .material-input:before, .form-control:focus ~ .material-input:after, .form-control.focus ~ .material-input:after {
             background: @input-danger;
         }
         .control-label, input.form-control:not(.empty) ~ .floating-label {
@@ -128,7 +128,7 @@ select[multiple].form-control {
         }
     }
     &.input-success {
-        .material-input:before, input.form-control:focus ~ .material-input:after, input.form-control.focus ~ .material-input:after {
+        .material-input:before, .form-control:focus ~ .material-input:after, .form-control.focus ~ .material-input:after {
             background: @input-success;
         }
         .control-label, input.form-control:not(.empty) ~ .floating-label {
@@ -136,7 +136,7 @@ select[multiple].form-control {
         }
     }
     &.input-info {
-        .material-input:before, input.form-control:focus ~ .material-input:after, input.form-control.focus ~ .material-input:after {
+        .material-input:before, .form-control:focus ~ .material-input:after, .form-control.focus ~ .material-input:after {
             background: @input-info;
         }
         .control-label, input.form-control:not(.empty) ~ .floating-label {
