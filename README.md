@@ -14,9 +14,6 @@ By Twitter @ https://github.com/twbs/bootstrap
 Bootstrap Material Design Theme  
 By Federico Zivolo @ https://github.com/FezVrasta/bootstrap-material-design
 
-Waves  
-By Alfiana Sibuea @ https://github.com/fians/Waves
-
 Material Cards  
 By Kevin Gimbel @ http://codepen.io/kevingimbel/pen/GCDep
 

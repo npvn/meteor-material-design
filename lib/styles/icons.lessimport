@@ -1,3 +1,0 @@
-.icon {
-    .variations(~"", color, @lightbg-text);
-}
