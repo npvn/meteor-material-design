@@ -1,22 +1,4 @@
-Intro
----
+Clone this repository into your `/client` folder (e.g. `/client/lib`) and start
+using Material Design with Meteor right away!
 
-This package provides an easy way to implement [Google Material Design](http://www.google.com/design/spec/material-design/introduction.html)
-components in your Meteor apps.
-
-Credit
----
-**meteor-material-design** is built on top of these excellent open-source projects:
-
-Bootstrap  
-By Twitter @ https://github.com/twbs/bootstrap
-
-Bootstrap Material Design Theme  
-By Federico Zivolo @ https://github.com/FezVrasta/bootstrap-material-design
-
-Material Cards  
-By Kevin Gimbel @ http://codepen.io/kevingimbel/pen/GCDep
-
-Demo
----
-[http://material.meteor.com](http://material.meteor.com)
+This is built on top of the excellent project at [https://github.com/FezVrasta/bootstrap-material-design](https://github.com/FezVrasta/bootstrap-material-design)
