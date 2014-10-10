@@ -1,0 +1,112 @@
+// Material Theme 0.0.1
+// -----------------------------------------------------
+
+@import "_variables.import.less";
+@import "_mixins.import.less";
+@import "_icons-material-design.import.less";
+@import "_animations.import.less";
+@import "_shadows.import.less";
+
+body {
+    background-color: #EEEEEE;
+    &.inverse {
+        background: #333333;
+        &, .form-control {
+            color: @darkbg-text;
+        }
+    }
+}
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+// Well and Jumbotrons
+@import "_welljumbo.import.less";
+
+// Buttons
+@import "_buttons.import.less";
+
+// Checkboxes
+@import "_checkboxes.import.less";
+
+// Radios
+@import "_radios.import.less";
+
+// Text inputs
+@import "_inputs.import.less";
+
+legend {
+    border-bottom: 0;
+}
+
+.modal-content {
+    .shadow-z-2();
+    border-radius: 0;
+    border: 0;
+    .modal-header {
+        border-bottom: 0;
+    }
+    .modal-footer {
+        border-top: 0;
+        .btn+.btn {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+// Lists
+@import "_lists.import.less";
+
+// Navbar
+@import "_navbar.import.less";
+
+.dropdown-menu {
+    border: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    .divider {
+        background-color: rgba(229, 229, 229, 0.12);
+    }
+    li {
+        overflow: hidden;
+        position: relative;
+        a:hover {
+            background: rgba(0,0,0,0.08);
+        }
+    }
+}
+
+// Alerts
+@import "_alerts.import.less";
+
+// Progress bar
+@import "_progress.import.less";
+
+// Typography
+.text-warning {
+    color: @btn-warning;
+}
+.text-primary {
+    color: @btn-primary;
+}
+.text-danger {
+    color: @btn-danger;
+}
+.text-success {
+    color: @btn-success;
+}
+.text-info {
+    color: @btn-info;
+}
+
+@import "_tabs.import.less";
+
+@import "_popups.import.less";
+
+@import "_icons.import.less";
+
+
+// External plugins
+@import "_plugin-snackbarjs.import.less";
+@import "_plugin-nouislider.import.less";
+@import "_plugin-selectize.import.less";
