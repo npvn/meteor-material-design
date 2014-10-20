@@ -17,8 +17,15 @@ body {
     }
 }
 
-body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+h5, h6{
     font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    
 }
 
 // Well and Jumbotrons
@@ -38,21 +45,6 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 legend {
     border-bottom: 0;
-}
-
-.modal-content {
-    .shadow-z-2();
-    border-radius: 0;
-    border: 0;
-    .modal-header {
-        border-bottom: 0;
-    }
-    .modal-footer {
-        border-top: 0;
-        .btn+.btn {
-            margin-bottom: 10px;
-        }
-    }
 }
 
 // Lists
@@ -105,6 +97,9 @@ legend {
 
 @import "_icons.import.less";
 
+@import "_cards.import.less";
+
+@import "_dialogs.import.less";
 
 // External plugins
 @import "_plugin-snackbarjs.import.less";
